@@ -78,17 +78,18 @@ for (let rows = 0; rows <= 4; rows++) {
 //  ****
 // *****
 
-// let age =20;
 
+// let age =20;
 // let canDrinkVar = age > 18? "Can drink" : "Cannot drink";
 
-let age = 20;
-let canDrinkVar;
 
-if (age > 18) {
-    canDrinkVar = "Can drink";
-}
-else {
-    canDrinkVar = "Cannot drink";
-}
+// let age = 20;
+// let canDrinkVar;
+
+// if (age > 18) {
+//     canDrinkVar = "Can drink";
+// }
+// else {
+//     canDrinkVar = "Cannot drink";
+// }
 
