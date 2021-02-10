@@ -89,3 +89,29 @@ function mainFunc() {
     console.log("The selected student is: " + randomStudent + "And he/she is an awesome student.")
 }
 mainFunc();
+
+
+// =================================
+
+function makeLine(length) {
+    var line = "";
+    for (var j = 1; j <= length; j++) {
+        line += "* "
+    }
+    console.log(line + "\n");
+}
+
+makeLine(5);
+
+
+// function buildTriangle(num) {
+
+//     let i;
+
+//     for (i = 1; i < num; i++) {
+//         console.log(makeLine(i));
+//     }
+//     return 435677534875;
+// }
+
+// let returnedvalue = buildTriangle(20);
