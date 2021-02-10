@@ -12,7 +12,15 @@
 <body>
     <h1 id="heading">Template</h1>
 
+    <button onclick="changeTheHeaderColor()"> Change the color</button>
     <script src="script.js"></script>
+    <script>
+        function changeTheHeaderColor() {
+            let headingEl = document.getElementById("heading");
+            headingEl.style = "color: red; font-size:60px;";
+            headingEl.style = "padding: 20px;"
+        }
+    </script>
 </body>
 
 </html>
