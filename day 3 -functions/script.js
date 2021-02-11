@@ -13,6 +13,8 @@ function add(num1, num2) {
     return num1 + num2;
 }
 
+let sum = add(20, 30);
+
 console.log("Way 2 = " + add(5, 10)); // ---> in between = console.log(15)
 
 

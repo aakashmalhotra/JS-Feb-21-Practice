@@ -1,0 +1,9 @@
+.heading-class {
+    color: red;
+    font-size: 60px;
+}
+
+.heading-class-magnified {
+    color: blue;
+    font-size: 100px;
+}
