@@ -6,4 +6,6 @@
 .heading-class-magnified {
     color: blue;
     font-size: 100px;
+    padding: 20px;
+    border: solid 5px brown;
 }
