@@ -13,13 +13,13 @@ function addStudent() {
     textBoxEl.value = "";
 }
 
-// function logStudents() {
-//     let studentListEl = document.getElementById("students-list");
-//     studentListEl.innerHTML = "";
-//     students.forEach(function (student) {
-//         let newDivEl = document.createElement("div"); // <div> </div>
-//         newDivEl.innerText = student; // <div> Student name </div>
+function logStudents() {
+    let studentListEl = document.getElementById("students-list");
+    studentListEl.innerHTML = "";
+    students.forEach(function (student) {
+        let newDivEl = document.createElement("div"); // <div> </div>
+        newDivEl.innerText = student; // <div> Student name </div>
 
-//         studentListEl.appendChild(newDivEl);
-//     })
-// }
+        studentListEl.appendChild(newDivEl);
+    })
+}
