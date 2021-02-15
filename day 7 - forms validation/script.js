@@ -42,7 +42,29 @@ function addStudent() {
     ageEl.value = "";
     hobbyEl.value = "";
 
+    // Update the list of students
+    updateStudentsList();
+
     // Always returning false, even on success so that the page does not reload.
     return false;
+}
+
+// FUnction that updates the list
+function updateStudentsList() {
+
+    // get the parent container of students list
+    let studentsListContainer = document.getElementById("students-list-container");
+    // Remove everything that's already in there
+    studentsListContainer.innerHTML = "";
+
+
+    // Reprint all the students
+    students.forEach(function (student) {
+        let newDivEl = document.createElement("div");
+        newDivEl.innerText = `Student Name: ${student.name}, Age: ${student.age}, Hobby: ${student.hobby}`;
+
+        studentsListContainer.appendChild(newDivEl);
+    });
+
 }
 
