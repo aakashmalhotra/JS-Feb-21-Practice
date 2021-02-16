@@ -32,5 +32,9 @@ function someFunction(yousef) {
 }
 
 function errorHandler(err) {
-    alert("Something went wrong. Please try again later");
+    alert("Something went wrong. Please try again later. the error status was " + err.target.status);
 }
+
+
+
+// 
