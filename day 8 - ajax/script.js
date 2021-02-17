@@ -1,3 +1,6 @@
+
+let containerEl = document.getElementById("container");
+
 function getStarWarsData() {
 
     // request the data
@@ -13,28 +16,19 @@ function getStarWarsData() {
     xhrObj.onerror = errorHandler;
 
     // Tell what kind of req to be made and where
-    xhrObj.open("GET", "https://swapi.devi/api/people/1/");
+    xhrObj.open("GET", "https://swapi.dev/api/people/1/");
 
     // Actually, sending the request
     xhrObj.send();
 }
 
-function someFunction(yousef) {
+function someFunction(resp) {
     // console.log(resp.target.response);
-    let respObject = JSON.parse(yousef.target.response);
+    let respObject = JSON.parse(resp.target.response);
     // console.log(respObject);
-
-    let containerEl = document.getElementById("container");
     containerEl.innerText = respObject.name;
-    // containerEl.innerText = resp.target.response
-
-    // respObject.height
 }
 
 function errorHandler(err) {
     alert("Something went wrong. Please try again later. the error status was " + err.target.status);
 }
-
-
-
-// 
