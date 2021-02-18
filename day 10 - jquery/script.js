@@ -1,4 +1,5 @@
 function getData() {
+    // const textBoxEl = document.getElementById("person");
     const textBoxEl = $("#person")[0];
     const personNumber = textBoxEl.value;
     const url = `https://swapi.dev/api/people/${personNumber}/`;
