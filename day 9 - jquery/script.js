@@ -4,11 +4,11 @@ function getStarWarsData() {
 }
 
 // Breaking down
-function getStarWarsData() {
-    let jqueryAjaxObj = $.ajax("https://swapi.dev/api/peopleu/1/");
-    jqueryAjaxObj.done(someFunction);
-    jqueryAjaxObj.fail(errorHandler);
-}
+// function getStarWarsData() {
+//     let jqueryAjaxObj = $.ajax("https://swapi.dev/api/peopleu/1/");
+//     jqueryAjaxObj.done(someFunction);
+//     jqueryAjaxObj.fail(errorHandler);
+// }
 
 // Function to handle success
 function someFunction(resp) {
