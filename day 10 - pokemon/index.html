@@ -12,15 +12,17 @@
 <body>
     <h1>Pokemon</h1>
 
-    <input type="text" name="poke" id="poke">
+    <label for="pokemon">Pokemon number</label>
+    <input type="number" name="pokemon" id="pokemon">
 
-    <button onclick="getPokemon()">Get pokemon</button>
+    <button onclick="getData()"> Get pokemon</button>
 
     <div id="container">
-        <!-- This is where my output would go -->
+
     </div>
 
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </body>
 
 </html>

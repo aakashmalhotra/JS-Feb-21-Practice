@@ -5,6 +5,8 @@ function getData() {
     const url = `https://swapi.dev/api/people/${personNumber}/`;
 
     $.ajax(url).done(respHandler).fail(errorHandler);
+
+    array[0][1]
 }
 
 // Function to handle success
