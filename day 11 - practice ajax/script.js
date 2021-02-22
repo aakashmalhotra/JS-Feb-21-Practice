@@ -10,7 +10,7 @@ function getPokemon() {
     const httpRequest = new XMLHttpRequest();
     httpRequest.open('GET', url);
     httpRequest.onload = respHandler;
-    // httpRequest.onerror = errorHandler;
+    httpRequest.onerror = errorHandler;
     httpRequest.send();
 
 }
@@ -20,13 +20,17 @@ function respHandler(resp) {
     const respJson = resp.target.response;
     const respObject = JSON.parse(respJson);
 
+    // const respObject = JSON.parse(resp.target.response);
+
+
     const containerDivEl = document.getElementById("container");
     containerDivEl.innerHTML = "";
 
     const newDivEl = document.createElement("p");
     newDivEl.innerText = respObject.name;
     containerDivEl.appendChild(newDivEl);
+}
 
-
-
+function errorHandler() {
+    alert("Something went wrong");
 }
